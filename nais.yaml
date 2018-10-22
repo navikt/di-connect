@@ -3,6 +3,13 @@ team: di
 replicas:
   min: 1
   max: 1
+resources:
+  limits:
+    cpu: 500m
+    memory: 2G
+  requests:
+    cpu: 200m
+    memory: 2G
 port: 8083
 fasitResources:
   used:
