@@ -20,11 +20,11 @@ fasitResources:
 healthcheck:
   liveness:
     path: /
-    initialDelay: 20
+    initialDelay: 120
     timeout: 1
     periodSeconds: 5
     failureThreshold: 10
   readiness:
     path: /
-    initialDelay: 20
+    initialDelay: 120
     timeout: 1
