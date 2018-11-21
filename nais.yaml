@@ -6,10 +6,10 @@ replicas:
 resources:
   limits:
     cpu: 500m
-    memory: 2G
+    memory: 3G
   requests:
     cpu: 200m
-    memory: 2G
+    memory: 3G
 port: 8083
 fasitResources:
   used:

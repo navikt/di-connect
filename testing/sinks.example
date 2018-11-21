@@ -1,0 +1,14 @@
+curl -X PUT \
+  /api/kafka-connect-1/connectors/postgres-sink/config \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json' \
+  -d '{
+  "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+  "table.name.format": "sinkit",
+  "connection.password": "postgres",
+  "topics": "postgres-main",
+  "tasks.max": "1",
+  "connection.user": "postgres",
+  "auto.create": "true",
+  "connection.url": "jdbc:postgresql://postgres:5432/kafka"
+}'
